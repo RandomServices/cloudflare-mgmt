@@ -1,0 +1,4 @@
+tabSize = 2
+softTabs = true
+excludeDirectories = "{$excludeDirectories}"
+includeFiles = "{$includeFiles,.env,.gitignore}"
