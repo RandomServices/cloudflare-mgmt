@@ -1,5 +1,8 @@
-require 'rubyflare'
+require 'rubygems'
+require 'dotenv'
+Dotenv.load
+require 'bundler'
+Bundler.require(:default)
+require_relative 'lib/replace_old_server'
 
-connection = Rubyflare.connect_with(ENV['CLOUDFLARE_USERNAME'], ENV['CLOUDFLARE_API_KEY'])
-
-zones = connection.get('zones')
+ReplaceOldServer.new('wu.rndsvc.net', 'podkayne.rndsvc.net').perform!

@@ -3,7 +3,6 @@ GEM
   specs:
     byebug (8.2.2)
     coderay (1.1.0)
-    curb (0.8.8)
     dotenv (2.1.0)
     method_source (0.8.2)
     pry (0.10.3)
@@ -13,8 +12,6 @@ GEM
     pry-byebug (3.3.0)
       byebug (~> 8.0)
       pry (~> 0.10)
-    rubyflare (0.1.0)
-      curb (~> 0.8.8)
     slop (3.6.0)
 
 PLATFORMS
@@ -23,7 +20,6 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   pry-byebug
-  rubyflare
 
 BUNDLED WITH
    1.11.2
